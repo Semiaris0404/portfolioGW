@@ -43,10 +43,7 @@
         .card{background-color:var(--light-accent);border-radius:16px;overflow:hidden;box-shadow:0 4px 20px var(--card-shadow);transition:transform 0.3s,box-shadow 0.3s;margin-bottom:20px}
         .card:hover{transform:translateY(-4px);box-shadow:0 8px 30px var(--card-shadow)}
         .card-visual{height:155px;display:flex;align-items:center;justify-content:center;overflow:hidden}
-        .visual-nlp{background:linear-gradient(135deg,#C8D8C6 0%,#A5BDA2 100%)}
-        .visual-createx{background:linear-gradient(135deg,#D4C5A9 0%,#BFA882 100%)}
-        .visual-wechat{background:linear-gradient(135deg,#A8C4D4 0%,#8BAFC2 100%)}
-        .card-visual svg{width:86px;height:86px;opacity:0.85}
+        .card-visual img{width:100%;height:100%;object-fit:cover;object-position:top;display:block}
         .card-body{padding:28px}
         .card-header{display:flex;justify-content:space-between;align-items:flex-start;margin-bottom:12px}
         .card-title{font-size:20px;font-weight:600;color:var(--dark-brown)}
@@ -176,15 +173,8 @@
 
                 <!-- NLP Classifier -->
                 <div class="card">
-                    <div class="card-visual visual-nlp">
-                        <svg viewBox="0 0 90 90" fill="none" xmlns="http://www.w3.org/2000/svg" aria-label="NLP text classification illustration">
-                            <rect x="10" y="14" width="70" height="10" rx="5" fill="white" opacity="0.5"/>
-                            <rect x="10" y="31" width="55" height="8" rx="4" fill="white" opacity="0.4"/>
-                            <rect x="10" y="46" width="62" height="8" rx="4" fill="white" opacity="0.35"/>
-                            <circle cx="45" cy="72" r="13" fill="white" opacity="0.2"/>
-                            <path d="M38 67 L45 58 L52 67 L55 72 L35 72Z" fill="white" opacity="0.55"/>
-                            <circle cx="45" cy="72" r="4.5" fill="white" opacity="0.75"/>
-                        </svg>
+                    <div class="card-visual">
+                        <img src="./classifier_summary.jpg" alt="Academic Paper Title Classifier — model output summary">
                     </div>
                     <div class="card-body">
                         <div class="card-header">
@@ -193,7 +183,7 @@
                         </div>
                         <p class="card-description">Developed and fine-tuned scalable multi-label classification pipeline in Python trained on 2,626 examples using TF-IDF and domain-specific features. Built automated Excel batch processing system for large-scale title classification and reference.</p>
                         <div class="card-links">
-                            <a href="https://github.com/Semiaris0404/categorizingAcademicPaper.git" target="_blank" rel="noopener" class="card-link">
+                            <a href="https://github.com/semiaris0404" target="_blank" rel="noopener" class="card-link">
                                 <svg viewBox="0 0 24 24" fill="currentColor"><path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"/></svg>
                                 View on GitHub →
                             </a>
@@ -201,27 +191,23 @@
                     </div>
                 </div>
 
-                <!-- CreateX -->
+                <!-- Auto Data Explorer (replaces CreateX) -->
                 <div class="card">
-                    <div class="card-visual visual-createx">
-                        <svg viewBox="0 0 90 90" fill="none" xmlns="http://www.w3.org/2000/svg" aria-label="Inventory management illustration">
-                            <rect x="18" y="38" width="54" height="38" rx="4" fill="white" opacity="0.28"/>
-                            <path d="M18 46 L45 56 L72 46" stroke="white" stroke-width="1.8" fill="none" opacity="0.65"/>
-                            <line x1="45" y1="56" x2="45" y2="76" stroke="white" stroke-width="1.5" opacity="0.55"/>
-                            <path d="M18 38 L45 26 L72 38 L45 50Z" fill="white" opacity="0.42"/>
-                            <circle cx="28" cy="22" r="2.5" fill="white" opacity="0.55"/>
-                            <circle cx="62" cy="20" r="2" fill="white" opacity="0.45"/>
-                            <circle cx="45" cy="16" r="2" fill="white" opacity="0.4"/>
-                        </svg>
+                    <div class="card-visual">
+                        <img src="./car_screemshot.jpg" alt="Auto Data Explorer — interactive D3.js dashboard screenshot">
                     </div>
                     <div class="card-body">
                         <div class="card-header">
-                            <div class="card-title">CreateX @ Georgia Tech</div>
-                            <div class="card-year">2026</div>
+                            <div class="card-title">Auto Data Explorer</div>
+                            <div class="card-year">2025</div>
                         </div>
-                        <p class="card-description">Building all-in-one inventory management system for a large variety of small businesses in collaboration with an interdisciplinary team. Developing affordable platform integrating demand forecasting and recommendations, real-time inventory tracking, and automated counting to streamline operations for resource-constrained businesses.</p>
+                        <p class="card-description">Interactive data visualization dashboard built with D3.js exploring 406 vehicles from 1970–1982. Features a brushing-and-linking scatter plot and bar chart, live year-range filtering, cylinder-group toggles via a clickable legend, animated transitions, and a hover tooltip with per-car statistics. All 406 data points are embedded inline — fully self-contained and hosted on GitHub Pages.</p>
                         <div class="card-links">
-                            <a href="https://github.com/Semiaris0404/Car_data_represent.git" target="_blank" rel="noopener" class="card-link">
+                            <a href="https://semiaris0404.github.io/car-data-viz/" target="_blank" rel="noopener" class="card-link">
+                                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/><polyline points="15 3 21 3 21 9"/><line x1="10" y1="14" x2="21" y2="3"/></svg>
+                                Live Demo →
+                            </a>
+                            <a href="https://github.com/semiaris0404/car-data-viz" target="_blank" rel="noopener" class="card-link">
                                 <svg viewBox="0 0 24 24" fill="currentColor"><path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"/></svg>
                                 View on GitHub →
                             </a>
@@ -231,17 +217,8 @@
 
                 <!-- WeChat -->
                 <div class="card">
-                    <div class="card-visual visual-wechat">
-                        <svg viewBox="0 0 90 90" fill="none" xmlns="http://www.w3.org/2000/svg" aria-label="WeChat mini program illustration">
-                            <rect x="27" y="11" width="36" height="66" rx="8" fill="white" opacity="0.22"/>
-                            <rect x="31" y="20" width="28" height="48" rx="3" fill="white" opacity="0.28"/>
-                            <rect x="35" y="26" width="20" height="4" rx="2" fill="white" opacity="0.6"/>
-                            <rect x="35" y="34" width="14" height="3" rx="1.5" fill="white" opacity="0.45"/>
-                            <rect x="35" y="41" width="17" height="3" rx="1.5" fill="white" opacity="0.4"/>
-                            <rect x="35" y="50" width="16" height="9" rx="4.5" fill="white" opacity="0.55"/>
-                            <path d="M35 59 L31 63 L39 59Z" fill="white" opacity="0.55"/>
-                            <rect x="38" y="73" width="14" height="2.5" rx="1.25" fill="white" opacity="0.38"/>
-                        </svg>
+                    <div class="card-visual">
+                        <img src="./healing_sample.jpg" alt="WeChat Mini Program — mental counseling platform screenshot">
                     </div>
                     <div class="card-body">
                         <div class="card-header">
@@ -267,7 +244,7 @@
         <h2 class="section-title">Resume</h2>
         <div class="resume-content">
             <h2>Zhichang (Grace) Wang</h2>
-            <p class="subtitle">Atlanta, GA 30309 · semiaris2004@gmail.com</p>
+            <p class="subtitle">Atlanta, GA 30309 · <a href="/cdn-cgi/l/email-protection" class="__cf_email__" data-cfemail="750610181c14071c0647454541351218141c195b161a18">[email&#160;protected]</a></p>
 
             <div class="tab-bar" role="tablist">
                 <button class="tab-btn active" onclick="switchTab('education')" role="tab" aria-selected="true">Education</button>
@@ -380,11 +357,4 @@
 
     function switchTab(tab) {
         document.querySelectorAll('.tab-panel').forEach(p => p.classList.remove('active'));
-        document.querySelectorAll('.tab-btn').forEach(b => { b.classList.remove('active'); b.setAttribute('aria-selected','false'); });
-        document.getElementById('tab-' + tab).classList.add('active');
-        const btn = [...document.querySelectorAll('.tab-btn')].find(b => b.textContent.trim().toLowerCase() === tab);
-        if (btn) { btn.classList.add('active'); btn.setAttribute('aria-selected','true'); }
-    }
-</script>
-</body>
-</html>
+        document.querySelectorAll('.tab-btn').forEach(b => { b.classList.remove('active'); b.setAttribute('aria-selected','fal
